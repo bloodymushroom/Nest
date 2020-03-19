@@ -8,6 +8,8 @@ const usersRouter = require('./routes/users');
 
 const app = express();
 
+require("./mongo");
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
